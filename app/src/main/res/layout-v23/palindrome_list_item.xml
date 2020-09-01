@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:id="@+id/palindrome_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        tools:text="race car"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/palindrome_web_search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_open_in_browser"
+        android:foreground="?attr/selectableItemBackground"
+        android:contentDescription="@string/look_up_definition_icon_content_description"
+        android:layout_marginEnd="16dp" />
+</LinearLayout>

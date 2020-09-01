@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/ic_baseline_remove_red_eye_24"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/nav_check"
+        android:icon="@drawable/ic_baseline_input_24"
+        android:title="Check"/>
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_baseline_contact_support_24"
+        android:title="About"/>
+</menu>

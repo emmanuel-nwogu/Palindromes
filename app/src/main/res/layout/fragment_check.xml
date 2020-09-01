@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/sharedPageScrollViewStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/palindromeCheckPagePrompt"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/palindrome_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:paddingTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:digits="'-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:hint="@string/palindromeInputHint"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:autofillHints="race car"
+            android:inputType="text|textAutoCorrect" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/check_button_text"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/palindrome_check_result"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignBottom="@id/check_button"
+                android:layout_gravity="end"
+                android:layout_toRightOf="@id/check_button"
+                tools:src="@drawable/ic_baseline_good_sign"
+                android:contentDescription="@string/palindrome_check_result_content_description"
+                android:layout_toEndOf="@id/check_button" />
+            <TextView
+                android:id="@+id/enter_another_word_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hey_check_another_word_hint_text"
+                android:layout_centerHorizontal="true"
+                android:textColor="#3CCEE7"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/compensation_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

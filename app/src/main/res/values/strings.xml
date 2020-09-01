@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Palindromes</string>
+    <string name="about_page_commentary">This app is powered by the MIT Java Wordnet Interface and the WordNet® database.</string>
+    <string name="palindromeCheckPagePrompt">Enter a word to check if it is a palindrome</string>
+    <string name="palindromeInputHint">Enter word to be checked</string>
+    <string name="check_button_text">check</string>
+    <string name="palindrome_check_result_content_description">Palindrome Check Result</string>
+    <string name="hey_check_another_word_hint_text">Hey, check another word!</string>
+    <string name="look_up_definition_icon_content_description">look_up_definition_icon</string>
+    <string name="check_out_developer_button_text">Check out the developer</string>
+</resources>
